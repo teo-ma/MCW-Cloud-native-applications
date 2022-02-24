@@ -149,6 +149,8 @@ FabMedical has provided starter files for you. They have taken a copy of the web
 
 1. A GitHub personal access token (PAT) with appropriate permissions is required to set up and complete this lab - [Follow this link](https://github.com/settings/tokens/new?scopes=repo&description=GitHub%20Secrets%20CLI) to quickly set up a GitHub personal access token with the required permissions. Save the obtained PAT as it will be needed by future steps.
 
+> Note: Make sure to also select the `workflow` and `admin:org read:org` permission scopes in addition to the `repo` scopes already selected when visiting the aforementioned link.
+
 2. Set the following environment variables in an Azure Cloud Shell terminal.
 
    ```bash
