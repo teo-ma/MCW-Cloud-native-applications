@@ -154,9 +154,10 @@ FabMedical has provided starter files for you. They have taken a copy of the web
 2. Set the following environment variables in an Azure Cloud Shell terminal.
 
    ```bash
-   export MCW_SUFFIX=<SUFFIX>                   # Needs to be a unique three letter string
-   export MCW_GITHUB_USERNAME=<GITHUB USERNAME> # Your Github account username
-   export MCW_GITHUB_TOKEN=<GITHUB PAT>         # A personal access token for your Github account
+   export MCW_SUFFIX=<SUFFIX>                            # Needs to be a unique three letter string
+   export MCW_GITHUB_USERNAME=<GITHUB USERNAME>          # Your Github account username
+   export MCW_GITHUB_TOKEN=<GITHUB PAT>                  # A personal access token for your Github account
+   export MCW_AZURE_SUBSCRIPTION=<AZURE SUBSCRIPTION ID> # The target Azure Subscription ID 
    ```
 
    > **Note**: The following environment variables can also be set if their defaults are not appropriate for the lab setting or environment.
@@ -212,12 +213,13 @@ FabMedical has provided starter files for you. They have taken a copy of the web
    git clone https://github.com/<GITHUB_USERNAME>/Fabmedical
    ```
 
-3. Set the following environment variables in the active SSH session to the build agent VM. Use the same GitHub access token used in a previous task.
+3. Set the following environment variables in the active SSH session to the build agent VM. Use the same GitHub access token and Azure subscription ID used in a previous task.
 
    ```bash
-   export MCW_SUFFIX=<SUFFIX>                   # Needs to be a unique three letter string
-   export MCW_GITHUB_USERNAME=<GITHUB USERNAME> # Your Github account username
-   export MCW_GITHUB_TOKEN=<GITHUB PAT>         # A personal access token for your Github account
+   export MCW_SUFFIX=<SUFFIX>                            # Needs to be a unique three letter string
+   export MCW_GITHUB_USERNAME=<GITHUB USERNAME>          # Your Github account username
+   export MCW_GITHUB_TOKEN=<GITHUB PAT>                  # A personal access token for your Github account
+   export MCW_AZURE_SUBSCRIPTION=<AZURE SUBSCRIPTION ID> # The target Azure Subscription ID 
    ```
 
 4. Run the `create_build_environment.sh` script to set up the build agent VM environment. This script installs necessary dependencies on the build agent VM and applies the configuration settings to the VM's environment necessary for proper execution of the workshop.
