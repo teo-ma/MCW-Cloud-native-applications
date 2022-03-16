@@ -23,6 +23,11 @@ if [[ -z "${MCW_GITHUB_TOKEN}" ]]; then
     exit 1
 fi
 
+if [[ -z "${MCW_AZURE_SUBSCRIPTION}" ]]; then
+    echo "Please set the MCW_AZURE_SUBSCRIPTION environment variable to your Azure subscription ID"
+    exit 1
+fi
+
 if [[ -z "${MCW_GITHUB_URL}" ]]; then
     MCW_GITHUB_URL=https://$MCW_GITHUB_TOKEN@github.com/$MCW_GITHUB_USERNAME/Fabmedical.git
 fi
@@ -85,7 +90,7 @@ az deployment group create --resource-group fabmedical-$MCW_SUFFIX --template-fi
 ACR_CREDENTIALS=$(az acr credential show -n fabmedical$MCW_SUFFIX)
 ACR_USERNAME=$(jq -r -n '$input.username' --argjson input "$ACR_CREDENTIALS")
 ACR_PASSWORD=$(jq -r -n '$input.passwords[0].value' --argjson input "$ACR_CREDENTIALS")
-AZURE_CREDENTIALS=$(az ad sp create-for-rbac --sdk-auth)
+AZURE_CREDENTIALS=$(az ad sp create-for-rbac --scope $MCW_AZURE_SUBSCRIPTION)
 
 GITHUB_TOKEN=$MCW_GITHUB_TOKEN
 cd ~/Fabmedical
