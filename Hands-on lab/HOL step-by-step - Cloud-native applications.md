@@ -1181,8 +1181,8 @@ This task will set up a Kubernetes Ingress using an [Nginx proxy server](https:/
 
    Paste the following as the contents. Be sure to replace the following placeholders in the script:
 
-   - **[INGRESS PUBLIC IP]**: Replace this with the IP Address copied from step 5.
-   - **[AKS NODEPOOL RESOURCE GROUP]**: Replace with the name of the Resource Group copied from step 6.
+   - **[INGRESS PUBLIC IP]**: Replace this with the IP Address copied from step 4.
+   - **[AKS NODEPOOL RESOURCE GROUP]**: Replace with the name of the Resource Group copied from step 5.
    - **[SUFFIX]**: Replace this with the same SUFFIX value used previously for this lab.
 
    ```bash
