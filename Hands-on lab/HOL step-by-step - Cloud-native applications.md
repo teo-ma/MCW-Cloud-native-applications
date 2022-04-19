@@ -1039,7 +1039,7 @@ This task will edit the web application source code to add Application Insights 
         branches:
         - main
         paths:
-        - 'content-api/**'
+        - 'content-web/**'
         - web.deployment.yml  # These two file
         - web.service.yml     # entries here
     ```
