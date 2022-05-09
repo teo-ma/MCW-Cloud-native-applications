@@ -163,11 +163,11 @@ FabMedical has provided starter files for you. They have taken a copy of the web
    > **Note**: The following environment variables can also be set if their defaults are not appropriate for the lab setting or environment.
 
       - MCW_GITHUB_URL - Defaults to `https://github.com/$MCW_GITHUB_USERNAME/Fabmedical`
-      - MCW_PRIMARY_LOCATION - Defaults to `northeurope`
-      - MCW_PRIMARY_LOCATION_NAME - Defaults to `North Europe`
+      - MCW_PRIMARY_LOCATION - Defaults to `eastus`
+      - MCW_PRIMARY_LOCATION_NAME - Defaults to `East US`
         - Note that the value needs to be placed in quotes (e.g. `export MCW_PRIMARY_LOCATION_NAME="West US"`)
-      - MCW_SECONDARY_LOCATION - Defaults to `westeurope`
-      - MCW_SECONDARY_LOCATION_NAME - Defaults to `West Europe`
+      - MCW_SECONDARY_LOCATION - Defaults to `westus`
+      - MCW_SECONDARY_LOCATION_NAME - Defaults to `West US`
 
    > **Note**: If you run into the error below, you may have to either use a different regional pair or increase your regional core quotas in your current regions. This lab's cloud resources require at least eight available cores in your regional core quota. An up to date list of Azure Region Pairs can be found at [this link](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions#azure-regional-pairs "Azure Region Pairs").
 
