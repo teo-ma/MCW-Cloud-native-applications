@@ -114,7 +114,7 @@ You should follow all the steps provided in this section _before_ taking part in
    git clone \
       --depth 1 \
       --branch main \
-      https://github.com/microsoft/MCW-Cloud-native-applications.git \
+      https://github.com/teo-ma/MCW-Cloud-native-applications.git \
       MCW-Cloud-native-applications
    cd MCW-Cloud-native-applications
    ```
